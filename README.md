@@ -75,9 +75,7 @@ Cada base de dados após as transformações foi salva em parquet na pasta clean
 
 ## União dos dados
 E para unir os arquivos limpos em uma base de dados final foi utilizados Spark SQL com a função UNION ALL nas três bases.
-Foi assim gerado uma base final com o nome de cadastro_final que foi escrita em parquet e salva no google drive na pasta Ready_Data.
-
-
+Assim foi gerada uma base final com o nome de cadastro_final que foi escrita em parquet e salva no google drive na pasta Ready_Data.
 
 ## Metadados Final
 * CPF: Número do cpf do cliente com 9 dígitos, string
