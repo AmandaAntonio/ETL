@@ -31,6 +31,7 @@ As bases de dados após serem recebidas foram armazenadas no Google Drive na pas
 * estado ou uf: estado da residência do cliente, string
 * data_cadastro: timestamp da data de cadastro, string
 * pais_cadastro ou pais: país onde foi realizado o cadastro do cliente
+* __inde__level__0: sequência de números, string
 
 # Desenvolvimento do Projeto
 ## Linguagem utilizada: 
