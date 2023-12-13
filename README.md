@@ -9,6 +9,8 @@ As bases de dados após serem recebidas foram armazenadas no Google Drive na pas
 2. Arquivo Parquet: dados_cadastro_1.parquet
 3. Arquivo Json: dados_cadastro_3.json
 
+![Diagrama do ETL](ETL/ETLDIAGRAMA.png)
+
 # Fluxo de Dados
 1. Extração das bases foi feita do Drive através de uma conexão 
 2. Transformação foi feita em Google Colab utilizando Spark Dataframe e Spark SQL
