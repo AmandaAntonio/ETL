@@ -40,7 +40,8 @@ As bases de dados após serem recebidas foram armazenadas no Google Drive na pas
    
 ## Bibliotecas:
 * !pip install pyspark
-* !pip install unidec from pyspark.sql import SparkSession
+* !pip install unidecode
+* from pyspark.sql import SparkSession
 * from pyspark.sql import functions as F
 * from pyspark.sql.types import StringType, TimestampType
 * from pyspark.sql.window import Window
