@@ -9,14 +9,14 @@ As bases de dados após serem recebidas foram armazenadas no Google Drive na pas
 2. Arquivo Parquet: dados_cadastro_1.parquet
 3. Arquivo Json: dados_cadastro_3.json
 
-![Dados brutos](raw_data.png)
+![Dados brutos](imagem/raw_data.png)
 
 # Fluxo de Dados
 1. Extração das bases foi feita do Drive através de uma conexão. 
 2. Transformação foi feita em Google Colab utilizando Spark Dataframe e Spark SQL.
 3. Carga foi feita no Drive na pasta Ready_Data com os dados em formato parquet.
 
-![Diagrama do ETL](ETLDIAGRAMA.png)
+![Diagrama do ETL](imagem/ETLDIAGRAMA.png)
 
 # Metadados Antes das Transformações
 * Cpf ou documento_cpf: Número do cpf do cliente com 9 dígitos, string
@@ -78,13 +78,13 @@ As bases de dados após serem recebidas foram armazenadas no Google Drive na pas
 
 Cada base de dados após as transformações foi salva em parquet na pasta clean_data no google drive.
 
-![Dados limpos e salvos](clean_data.png)
+![Dados limpos e salvos](imagem/clean_data.png)
 
 ## União dos dados
 E para unir os arquivos limpos em uma base de dados final foi utilizados Spark SQL com a função UNION ALL nas três bases.
 Assim foi gerada uma base final com o nome de cadastro_final que foi escrita em parquet e salva no google drive na pasta Ready_Data.
 
-![Base Final](ready_data.png)
+![Base Final](imagem/ready_data.png)
 
 ## Metadados Final
 * CPF: Número do cpf do cliente com 9 dígitos, string
