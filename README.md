@@ -45,7 +45,7 @@ As bases de dados após serem recebidas foram armazenadas no Google Drive na pas
 * from pyspark.sql import functions as F
 * from pyspark.sql.types import StringType, TimestampType
 * from pyspark.sql.window import Window
-* from unidecode import unidecode ode
+* from unidecode import unidecode 
 
 ## Transformações no Arquivo Csv
 1. Remoção de pronomes de tratamento da coluna nome (Sr., Srta., Dr., Dra., Sra.).
