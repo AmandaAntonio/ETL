@@ -14,7 +14,7 @@ As bases de dados após serem recebidas foram armazenadas no Google Drive na pas
 # Fluxo de Dados
 1. Extração das bases foi feita do Drive através de uma conexão. 
 2. Transformação foi feita em Google Colab utilizando Spark Dataframe e Spark SQL.
-3. Carga foi feita no Drive na pasta Ready_Data comos dados em formato parquet.
+3. Carga foi feita no Drive na pasta Ready_Data com os dados em formato parquet.
 
 ![Diagrama do ETL](ETLDIAGRAMA.png)
 
