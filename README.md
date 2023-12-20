@@ -1,6 +1,6 @@
 # Visão Geral do Projeto
 Neste projeto temos 3 arquivos (.csv, .parquet , .json) com dados cadastrais de pessoas físicas. Os dados vieram de bancos de dados diferentes, por isso, possui algumas diferenças entre os dados. 
-O entregável vai ser um script de extensão .py que vai ler os dados de entrada e gerar uma tabela única no final, contendo todos os cadastros íntegros e tratados.
+O entregável é um script de extensão .py que vai ler os dados de entrada e gerar uma tabela única no final, contendo todos os cadastros íntegros e tratados.
 Para isso será desenvolvido um script no Spark que vai ler os 3 arquivos, aplicar várias transformações mantendo a integridade dos dados, trazendo no final as colunas em comum dos 3 arquivos.
 
 # Fontes de Dados
@@ -101,4 +101,4 @@ Assim foi gerada uma base final com o nome de cadastro_final que foi escrita em 
 * PAIS_CADASTRO: País onde foi realizado o cadastro do cliente, string
 
 # Resultado
-Base de dados final contendo todos os cadastros íntegros e tratados pode ser carregada em um Banco de Dados ou Data Lake. Para posterior uso em construção de dashboard para a tomada de decisão ou para criação de varáveis preditivas para ML.  
+Base de dados final contendo todos os cadastros íntegros e tratados pode ser carregada em um Banco de Dados ou Data Lake. Para posterior uso em construção de dashboard informacionais ou para criação de varáveis preditivas para ML.  
