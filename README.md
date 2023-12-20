@@ -55,7 +55,7 @@ As bases de dados após serem recebidas foram armazenadas no Google Drive na pas
 5. Remoção de caractere (.0) da coluna numero.
 6. Substituição do registro Br da coluna pais_cadastro para Brasil.
 7. Remoção de acentos presentes nas colunas: nome, convenio, logradouro, bairro, cidade.
-8. Exclusão de cpf duplicado. Para isso foi criado uma partição (grupo) por cpf ordenada pela data_cadastro com ordenação desc (ou seja, os cpfs iguais seriam “agrupados” e ordenados a partir da coluna data_cadastro) e foi adicionado uma coluna numerada com row_number para filtrar os valores de cada grupo de cpf (ou seja, cada um dos cpfs de um grupo recebeu uma numeração ranqueada a partir da sua data de cadastro, sendo 1 a data mais recente). A partir disso foi realizado um filtro na coluna de raqueamento para que apenas registro igual a 1 (data mais recente)fosse mantoido .
+8. Exclusão de cpf duplicado. Para isso foi criado uma partição (grupo) por cpf ordenada pela data_cadastro com ordenação desc (ou seja, os cpfs iguais seriam “agrupados” e ordenados a partir da coluna data_cadastro) e foi adicionado uma coluna numerada com row_number para filtrar os valores de cada grupo de cpf (ou seja, cada um dos cpfs de um grupo recebeu uma numeração ranqueada a partir da sua data de cadastro, sendo 1 a data mais recente). A partir disso foi realizado um filtro na coluna de raqueamento para que apenas registro igual a 1 (data mais recente)fosse mantido.
 9. Padronização dos nomes (escrito em CAPS LOCK) e da sequência das colunas após o tratamento: CPF, NOME, DATA_NASCIMENTO, SEXO, CONVENIO, LOGRADOURO, NUMERO, BAIRRO, CIDADE, ESTADO, DATA_CADASTRO, PAIS_CADASTRO
 
 ## Transformações no Arquivo Parquet
